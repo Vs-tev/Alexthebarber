@@ -1,0 +1,63 @@
+
+.section-price{
+    background-image: url(../img/andi-whiskey-Mz_BqbdUDH0-unsplash.jpg);
+    min-height: 400px;
+    position: relative;
+    opacity: 0.9;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    top: 50px
+}
+
+.section-price .div-price {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+   
+}
+
+
+@media screen and (max-width: 1168px) {
+    .section-price{
+        background-attachment: scroll
+    }
+    .section-price .div-price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-direction:column; 
+    }
+    
+    .div-price .pricing-list:nth-child(1){
+        font-size: 16px!important;
+        padding: 3% 0% 0%!important;
+        word-break: break-all
+    }
+    .div-price .pricing-list:nth-child(2){
+        font-size: 16px!important;
+        padding: 0% 0% 3%!important;
+        word-break: break-all
+    }
+}
+
+.div-price .pricing-list {
+    font-family: 'Teko', sans-serif;   
+    color: white;
+    letter-spacing: 1px;
+    font-size: 24px;
+    list-style: none;
+    padding: 5% 0% 5% 0%;
+}
+
+.div-price .pricing-list li {
+    padding: 6px
+}
+
+.div-price .pricing-list li .fa-clock {
+    font-size: 14px
+}
+

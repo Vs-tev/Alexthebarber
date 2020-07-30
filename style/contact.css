@@ -1,0 +1,180 @@
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 290px;
+}
+
+.social-span {
+    padding: 20px;
+    cursor: pointer;
+    background: transparent
+}
+
+.social-media i {
+    font-size: 22px;
+    transition: all .4s ease-in;
+    color: var(--green-color);
+    z-index: -1;
+}
+
+.social-media > .social-span:hover i {
+    transform: rotateY(180deg);
+    transition: .4s ease-in;
+    cursor: pointer;
+}
+
+.contact-section {
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.91)), url(../img/contact.jpg);
+    min-height: 400px;
+    position: relative;
+    opacity: 0.9;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}
+
+.open-time-container h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--green-color);
+    font-family: var(--font-teko);
+}
+
+.open-time {
+    color: white;
+    list-style: none;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.open-time li {
+    padding: 5px 0px 5px
+}
+
+.location-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    overflow: hidden
+}
+
+.icon-contact {
+    color: white;
+    font-size: 18px;
+    padding: 8px
+}
+
+.content-div {
+    position: relative;
+    left: px
+}
+
+.content-div > h3 {
+    color: var(--green-color);
+    font-family: var(--font-teko);
+    font-size: 24px;
+    font-weight: 400;
+    padding: 0px
+}
+
+.contact-text > h3 {
+    color: white;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px
+}
+
+.contact-text > h3 > span {
+    color: var(--green-color);
+}
+
+.mail-to {
+    color: #c3c3c3;
+    text-decoration: none;
+    font-weight: 500
+}
+
+.subtext {
+    font-size: 16px;
+    color: #c3c3c3 !important;
+    font-weight: 500 !important
+}
+
+.make-apointment {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.make-apointment > a {
+    text-decoration: none;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .contact-section {
+        padding: 0% 0% 8% 0%
+    }
+
+    .contact-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .location-container {
+        align-self: flex-start;
+        padding: 6% 0% 6% 2%
+    }
+
+    .make-apointment {
+        padding: 8% 0% 8% 0%
+    }
+}
+
+/*Map section*/
+.map-separator {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.map-separator > h3 {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: var(--font-teko)
+}
+
+.separator-icon {
+    padding: 10px;
+    font-size: 22px;
+    color: var(--green-color)
+}
+
+.map {
+    margin: auto
+}
+
+#map {
+    height: 400px;
+    width: 80%;
+    margin-left: 10%;
+    border: none    
+}
