@@ -87,29 +87,33 @@ html {
     display: none;
     width: 30px;
     height: 30px;
-    display: flex;
     background: black;
     opacity: 0;
     position: absolute;
     top: 0;
     right: 0;
 }
-.logo img{
-    height: 45px;
+.logo {
+    height: 70px;
      position: absolute;
     z-index: 7;
     top: 25%;
-    left: 5%;
-    transform: translate(-25%, -3%)
+    left: 8%;
+    transform: translate(-25%, -3%);
+    color: #fff;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 16px;
+    
+        
 }
 
 @media screen and (max-width: 768px) {
-.logo img{
+.logo{
     height: 40px;
     position: absolute;
     z-index: 7;
-    top: 23%;
-    left: 8%;
+    top: 35%;
+    left: 15%;
     transform: translate(-25%, -3%)
 }
     .navbar-toggle {
@@ -428,7 +432,7 @@ font-size: 20px;
 .text-about {
     grid-column: 2/3;
     -ms-grid-column: 2;
-    margin: 0% ;
+    margin: 0% 0% 15%;
     width: 100%
 }
 .right-about{
